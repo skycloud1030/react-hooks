@@ -5,6 +5,13 @@ function useScript(url) {
     function load() {
       setLoaded(true);
     }
+    let exist = document.querySelector(`script[src="${url}"]`);
+
+    if (exist) {
+      setLoaded(true);
+      return;
+    }
+
     if (url) {
       const script = document.createElement("script");
       script.src = url;
