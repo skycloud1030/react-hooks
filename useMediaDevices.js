@@ -11,6 +11,8 @@ export default function useMediaDevices(video_ref, facingMode = "environment") {
         setStream(stream);
         video_ref.current.oncanplay = () => {
           video_ref.current.play();
+          video_ref.current.width = video_ref.current.videoWidth;
+          video_ref.current.height = video_ref.current.videoHeight;
           setReady(true);
         };
       });
