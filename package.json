@@ -19,6 +19,6 @@
   "dependencies": {
     "intersection-observer": "^0.5.1",
     "lodash": "^4.17.11",
-    "react": "^16.8.6"
+    "react": "^16.12.0"
   }
 }
